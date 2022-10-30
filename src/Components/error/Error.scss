@@ -1,0 +1,38 @@
+@import "../../main/variable.scss";
+
+.errorContainer {
+  @include containerRule;
+  @media (max-width: $mobilBreakPoint) {
+  }
+}
+.error {
+  color: rgb(255, 96, 96);
+  text-align: center;
+}
+.mainError {
+  font-size: 288px;
+  font-weight: 700;
+  @media (max-width: $mobilBreakPoint) {
+    font-size: 96px;
+    margin-top: 180px;
+  }
+}
+.subtitle {
+  margin-top: 66px;
+  font-size: 36px;
+  @media (max-width: $mobilBreakPoint) {
+    font-size: 18px;
+    margin-top: 11px;
+  }
+}
+.backHome {
+  margin-top: 182px;
+  font-size: 18px;
+  text-decoration: underline;
+  cursor: pointer;
+
+  @media (max-width: $mobilBreakPoint) {
+    font-size: 14px;
+    margin-top: 133px;
+  }
+}

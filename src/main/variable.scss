@@ -1,0 +1,14 @@
+@mixin containerRule {
+  max-width: 1240px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: auto;
+  @media (max-width: 600px) {
+    width: 100%;
+    padding: 0px 20px 0px 20px;
+    box-sizing: border-box;
+  }
+}
+
+$mobilBreakPoint: 600px;

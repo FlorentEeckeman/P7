@@ -1,0 +1,57 @@
+@import "variable.scss";
+
+body {
+  font-family: "Montserrat" !important;
+}
+
+.logo {
+  width: 210px;
+  fill: rgb(255, 96, 96);
+  padding-top: 40px;
+  @media (max-width: $mobilBreakPoint) {
+    max-width: 145px;
+    padding-top: 20px;
+  }
+}
+.navbar ul li {
+  list-style: none;
+  color: rgb(255, 96, 96) !important;
+  :hover {
+    color: rgb(255, 96, 96);
+    cursor: pointer;
+  }
+  :hover {
+    border-bottom: 1px solid rgb(255, 96, 96);
+  }
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+  box-sizing: border-box;
+  @media (max-width: $mobilBreakPoint) {
+    width: 100%;
+    padding-bottom: 16px;
+  }
+}
+.header ul {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  padding-top: 57px;
+  margin: auto;
+  box-sizing: border-box;
+  :first-child {
+    margin-left: 57px;
+  }
+  @media (max-width: $mobilBreakPoint) {
+    padding-top: 38px;
+    column-gap: 10px;
+    align-items: center;
+    :first-child {
+      margin-left: 0px;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+  }
+}

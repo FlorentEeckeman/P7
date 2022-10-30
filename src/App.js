@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Error from "./Components/error/Error";
+import Home from "./Components/home/Home";
+import About from "./Components/about/About";
+import Card from "./Components/card/Card";
+import json from "./main/Data.json";
+import { useState } from "react";
 
 function App() {
+  const [data, setData] = useState(json);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Routes>
+          <Route path="/about" element={<About />} />
+          <Route path="/page/:id" element={<Card data={data} />} />
+
+          <Route path="/" element={<Home setData={setData} />} />
+          <Route path="*" element={<Error />} />
+        </Routes>
+      </Router>
     </div>
   );
 }

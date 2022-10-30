@@ -1,0 +1,35 @@
+@import "variable.scss";
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 209px;
+  background-color: black;
+  fill: white;
+  margin: 0px !important;
+  width: 100%;
+  @media (max-width: $mobilBreakPoint) {
+  }
+}
+.logoFooter {
+  width: 122px;
+  fill: white;
+  margin: auto;
+  @media (max-width: $mobilBreakPoint) {
+    margin: 0;
+    padding: 20px;
+  }
+}
+.displau {
+  display: flex;
+}
+.legalMention {
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 29px;
+  @media (max-width: $mobilBreakPoint) {
+    font-size: 12px;
+  }
+}
