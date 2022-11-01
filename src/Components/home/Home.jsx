@@ -5,12 +5,8 @@ import "./Home.scss";
 import CardGroup from "./CardGroup";
 import Footer from "../../main/Footer";
 import image from "./img/background.png";
-import json from "../../main/Data.json";
-import { useState } from "react";
 
-function Home() {
-  const [data, setData] = useState(json);
-
+function Home({ data }) {
   return (
     <div>
       <div className="homeContainer">
