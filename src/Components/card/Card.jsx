@@ -7,7 +7,7 @@ import CardLocation from "./CardLocation";
 import CardInfos from "./CardInfos";
 import { useLocation, useNavigate } from "react-router-dom";
 
-function Card({ data }) {
+function Card() {
   const location = useLocation();
   const localData = location.state;
   const navigate = useNavigate();
