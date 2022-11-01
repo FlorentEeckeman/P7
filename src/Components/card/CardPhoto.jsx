@@ -9,8 +9,9 @@ function CardPhoto({ img }) {
   return (
     <div className="cardPhotoContainerTop">
       <div className="cardPhotoContainer">
-        {img.map((img) => (
+        {img.map((img, ind) => (
           <div
+            key={ind}
             className="cardPhotoContainerElement"
             style={{
               backgroundImage: `url(${img})`,
